@@ -7,6 +7,16 @@
   <title>Moda para Toda a Família</title>
   <link rel="icon" type="image/png" href="imagens/Logo.png">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Google Tag Manager -->
+  <script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-WCG627W5');
+  </script>
+
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-467400524"></script>
   <script>
@@ -16,6 +26,7 @@
 
     gtag('config', 'AW-467400524');
   </script>
+
   <style>
     :root {
       --primary-blue: #2563eb;       /* Azul vibrante principal  */
@@ -402,8 +413,21 @@
     <div class="social-links">
       <a href="https://www.instagram.com/outletviamartinsoficial/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
       <a href="https://www.facebook.com/outletviamartinsoficial" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-      <a href="https://wa.me/5518998092210" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      <a id="btn-whatsapp" href="https://wa.me/5518998092210" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
     </div>
   </section>
+  <script>
+    document.getElementById("btn-whatsapp").addEventListener("click", function() {
+      gtag('event', 'conversion', {
+        'send_to': 'AW-467400524/WZx0CIayi-0aEMzu794B' // Substitua com seu ID e label da conversão
+      });
+    });
+  </script>
+
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WCG627W5"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe>
+  </noscript>
+
 </body>
 </html>
