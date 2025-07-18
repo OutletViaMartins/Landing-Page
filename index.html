@@ -210,6 +210,9 @@
     }
     
     .gallery-item {
+      display: flex;
+      justify-content: center;
+      align-items:end;
       position: relative;
       overflow: hidden;
       height: 400px;
@@ -225,6 +228,11 @@
       transition: transform 0.4s ease;
     }
     
+    #fix-image {
+      width: 95%;
+      height: 95%;
+    }
+
     .gallery-item img:hover {
       transform: scale(1.05);
     }
@@ -321,6 +329,7 @@
       .gallery-item{
         height: 320px;
       }
+
     }
     
     @media (max-width: 480px) {
@@ -337,6 +346,10 @@
       }
       .gallery-item{
         height: 500px;
+      }
+      #fix-image {
+        width: 100%;
+        height: 85%;
       }
     }
   </style>
@@ -361,6 +374,7 @@
     <div>Loja física em Adamantina-SP</div>
     <div>Peças novas toda semana</div>
     <div>Atendimento para a família inteira</div>
+    <div>Entregamos em todo o Brasil</div>
   </section>
 
   <section class="offer">
@@ -379,10 +393,10 @@
       <img src="imagens/Jaqueta Moletom Nylon Com Capuz.jpg" alt="Peça 2">
       </div>
       <div class="gallery-item">
-      <img src="imagens/Shorts Linho Sawary - 276106.png" alt="Peça 3">
+      <img id="fix-image" src="imagens/Jaqueta Jeans Sawary - 279140.jpg" alt="Peça 3">
       </div>
       <div class="gallery-item">
-      <img src="imagens/Shorts Jeans Sawary - 279858.jpg" alt="Peça 4">
+      <img id="fix-image" src="imagens/Blazer Feminino Preto.png" alt="Peça 4">
       </div>
     </div>
   </section>
