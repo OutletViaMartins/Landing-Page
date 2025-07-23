@@ -300,11 +300,16 @@
     .social-links a {
       color: var(--primary-blue);
       font-size: 1.5rem;
-      transition: transform 0.3s ease;
+      transition: all 0.3s ease;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
     }
     
     .social-links a:hover {
       transform: translateY(-3px);
+      color: var(--text-light);
+      background: var(--accent-blue);
     }
     
     @media (max-width: 768px) {
