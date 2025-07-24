@@ -19,7 +19,6 @@
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-474SS3BYRR"></script>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-467400524"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
@@ -27,8 +26,6 @@
 
     // Configura o GA4
     gtag('config', 'G-474SS3BYRR');
-
-    gtag('config', 'AW-467400524');
   </script>
 
   <style>
@@ -129,13 +126,15 @@
       align-items: center;
       gap: 1rem;
       box-shadow: var(--shadow);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      transition: all 0.3s ease;
       border-left: 4px solid var(--accent-blue);
     }
     
     .benefits div:hover {
       transform: translateY(-5px);
       box-shadow: 0 10px 15px rgba(59, 130, 246, 0.2);
+      color: var(--text-light);
+      background-color: var(--dark-blue);
     }
     
     .benefits div::before {
@@ -143,8 +142,13 @@
       color: var(--primary-blue);
       font-weight: bold;
       font-size: 1.2rem;
+      transition: all 0.3s ease;
     }
     
+    .benefits div:hover::before{
+      color: var(--text-light);
+    }
+
     .offer {
       background: linear-gradient(to right, var(--light-blue), white);
       padding: 3rem 1rem;
@@ -377,13 +381,13 @@
   <img src="imagens/Fachada_loja.webp" alt="Foto da loja" class="hero-image">
 
   <section class="benefits">
-    <div>Roupas a partir de R$10</div>
-    <div>Peças até o tamanho 70</div>
-    <div>Atendimento e chamada de vídeo direto no WhatsApp</div>
-    <div>Loja física em Adamantina-SP</div>
-    <div>Peças novas toda semana</div>
-    <div>Atendimento para a família inteira</div>
-    <div>Entregamos em todo o Brasil</div>
+    <div id="btn-zap-benefit-10">Roupas a partir de R$10</div>
+    <div id="btn-zap-benefit-plus-size">Peças até o tamanho 70</div>
+    <div id="btn-zap-benefit-video">Atendimento e chamada de vídeo direto no WhatsApp</div>
+    <div id="btn-maps-benefit">Loja física em Adamantina-SP</div>
+    <div id="btn-zap-benefit-novidade">Peças novas toda semana</div>
+    <div id="btn-zap-benefit-familia">Atendimento para a família inteira</div>
+    <div id="btn-zap-benefit-entrega">Entregamos em todo o Brasil</div>
   </section>
 
   <section class="offer">
