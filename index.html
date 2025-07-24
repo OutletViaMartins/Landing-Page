@@ -118,8 +118,9 @@
       background-color: var(--soft-blue);
     }
     
-    .benefits div {
+    .benefits a {
       background-color: white;
+      color: var(--text-dark);
       padding: 1.5rem;
       border-radius: 10px;
       display: flex;
@@ -128,16 +129,17 @@
       box-shadow: var(--shadow);
       transition: all 0.3s ease;
       border-left: 4px solid var(--accent-blue);
+      text-decoration: none;
     }
     
-    .benefits div:hover {
+    .benefits a:hover {
       transform: translateY(-5px);
       box-shadow: 0 10px 15px rgba(59, 130, 246, 0.2);
       color: var(--text-light);
       background-color: var(--dark-blue);
     }
     
-    .benefits div::before {
+    .benefits a::before {
       content: "✓";
       color: var(--primary-blue);
       font-weight: bold;
@@ -145,7 +147,7 @@
       transition: all 0.3s ease;
     }
     
-    .benefits div:hover::before{
+    .benefits a:hover::before{
       color: var(--text-light);
     }
 
@@ -381,13 +383,13 @@
   <img src="imagens/Fachada_loja.webp" alt="Foto da loja" class="hero-image">
 
   <section class="benefits">
-    <div id="btn-zap-benefit-10">Roupas a partir de R$10</div>
-    <div id="btn-zap-benefit-plus-size">Peças até o tamanho 70</div>
-    <div id="btn-zap-benefit-video">Atendimento e chamada de vídeo direto no WhatsApp</div>
-    <div id="btn-maps-benefit">Loja física em Adamantina-SP</div>
-    <div id="btn-zap-benefit-novidade">Peças novas toda semana</div>
-    <div id="btn-zap-benefit-familia">Atendimento para a família inteira</div>
-    <div id="btn-zap-benefit-entrega">Entregamos em todo o Brasil</div>
+    <a id="btn-zap-benefit-10" href="https://wa.link/17kbuk">Roupas a partir de R$10</a>
+    <a id="btn-zap-benefit-plus-size" href="https://wa.link/1xwk1f">Peças até o tamanho 70</a>
+    <a id="btn-zap-benefit-video" href="https://wa.link/lfq05e">Atendimento e chamada de vídeo direto no WhatsApp</a>
+    <a id="btn-maps-benefit" href="https://maps.app.goo.gl/2BjKhRaKjGXnnNiT9">Loja física em Adamantina-SP</a>
+    <a id="btn-zap-benefit-novidade" href="https://wa.link/w3ycab">Peças novas toda semana</a>
+    <a id="btn-zap-benefit-familia" href="https://wa.link/b96xx1">Atendimento para a família inteira</a>
+    <a id="btn-zap-benefit-entrega" href="https://wa.link/cr911n">Entregamos em todo o Brasil</a>
   </section>
 
   <section class="offer">
