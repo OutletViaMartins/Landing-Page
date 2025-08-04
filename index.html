@@ -100,16 +100,29 @@
       border-bottom: 5px solid var(--primary-blue);
     }
     
-    .benefits {
+    .benefits{
+      padding: 2rem 0rem;
+      background-color: var(--soft-blue);
+    }
+
+    .benefits h2{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-bottom: none;
+      font-size: 2rem;
+      color: var(--dark-blue);
+    }
+
+    .benefits div {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
       justify-content: center;
       gap: 1.5rem;
-      padding: 3rem 2rem;
-      background-color: var(--soft-blue);
+      padding: 1rem 2rem 4rem;
     }
     
-    .benefits a {
+    .benefits div a {
       background-color: white;
       color: var(--text-dark);
       padding: 1.5rem;
@@ -123,14 +136,14 @@
       text-decoration: none;
     }
     
-    .benefits a:hover {
+    .benefits div a:hover {
       transform: translateY(-5px);
       box-shadow: 0 10px 15px rgba(59, 130, 246, 0.2);
       color: var(--text-light);
       background-color: var(--dark-blue);
     }
     
-    .benefits a::before {
+    .benefits div a::before {
       content: "✓";
       color: var(--primary-blue);
       font-weight: bold;
@@ -138,7 +151,7 @@
       transition: all 0.3s ease;
     }
     
-    .benefits a:hover::before{
+    .benefits div a:hover::before{
       color: var(--text-light);
     }
 
@@ -244,8 +257,7 @@
       background: linear-gradient(135deg, var(--primary-blue), var(--dark-blue));
       color: white;
     }
-  
-    
+
     .cta a {
       background-color: white;
       color: var(--primary-blue);
@@ -296,10 +308,10 @@
     
     .social-links a {
       color: var(--primary-blue);
-      font-size: 1.5rem;
+      font-size: 1.8rem;
       transition: all 0.3s ease;
-      width: 40px;
-      height: 40px;
+      width: 50px;
+      height: 50px;
       border-radius: 50%;
     }
     
@@ -315,7 +327,7 @@
         align-items: center;
       }
 
-      header h1 {
+      header h1, .benefits h2 {
         font-size: 1.8rem;
       }
       
@@ -343,7 +355,7 @@
         padding: 2rem 1rem;
       }
       
-      header h1 {
+      header h1, .benefits h2{
         font-size: 1.5rem;
       }
       
@@ -374,13 +386,14 @@
   <img src="imagens/Fachada_loja.webp" alt="Foto da loja" class="hero-image">
 
   <section class="benefits">
-    <a id="btn-zap-benefit-10" href="https://wa.link/17kbuk">Roupas a partir de R$10</a>
-    <a id="btn-zap-benefit-plus-size" href="https://wa.link/1xwk1f">Peças até o tamanho 70</a>
-    <a id="btn-zap-benefit-video" href="https://wa.link/lfq05e">Atendimento e chamada de vídeo direto no WhatsApp</a>
-    <a id="btn-maps-benefit" href="https://maps.app.goo.gl/2BjKhRaKjGXnnNiT9">Loja física em Adamantina-SP</a>
-    <a id="btn-zap-benefit-novidade" href="https://wa.link/w3ycab">Peças novas toda semana</a>
-    <a id="btn-zap-benefit-familia" href="https://wa.link/b96xx1">Atendimento para a família inteira</a>
-    <a id="btn-zap-benefit-entrega" href="https://wa.link/cr911n">Entregamos em todo o Brasil</a>
+    <h2>Escolha uma das opções!</h2>
+    <div>
+      <a id="btn-zap-benefit-10" href="https://wa.link/17kbuk">Roupas a partir de R$10</a>
+      <a id="btn-zap-benefit-plus-size" href="https://wa.link/1xwk1f">Peças até o tamanho 70</a>
+      <a id="btn-zap-benefit-video" href="https://wa.link/lfq05e">Atendimento por WhatsApp</a>
+      <a id="btn-maps-benefit" href="https://maps.app.goo.gl/2BjKhRaKjGXnnNiT9">Loja física em Adamantina-SP</a>
+      <a id="btn-zap-benefit-entrega" href="https://wa.link/cr911n">Entregamos no conforto da sua casa</a>
+    </div>
   </section>
 
   <section class="offer">
@@ -431,8 +444,8 @@
     <p>📞 (18) 99809-2210</p>
     <div class="social-links-text">Nos Siga nas Redes Sociais</div>
     <div class="social-links">
-      <a href="https://www.instagram.com/outletviamartinsoficial/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-      <a href="https://www.facebook.com/outletviamartinsoficial" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a id="btn-insta" href="https://www.instagram.com/outletviamartinsoficial/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a id="btn-face" href="https://www.facebook.com/outletviamartinsoficial" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
     </div>
   </section>
 
