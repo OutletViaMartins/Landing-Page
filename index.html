@@ -123,18 +123,26 @@
     .benefits div a {
       background-color: white;
       color: var(--text-dark);
-      padding: 1.5rem;
+      padding: 1rem 1rem 0rem;
       border-radius: 10px;
       display: flex;
-      align-items: center;
-      gap: 1rem;
+      flex-direction: column;
+      justify-content: left;
       box-shadow: var(--shadow);
       transition: all 0.3s ease;
       border-left: 4px solid var(--accent-blue);
       text-decoration: none;
     }
     
-    .benefits div a:hover {
+    .benefits div a p{
+      color: red;
+    }
+
+    .benefits div a:hover p {
+      color: var(--branco);
+    }
+
+    .benefits div a:hover{
       transform: translateY(-5px);
       box-shadow: 0 10px 15px rgba(59, 130, 246, 0.2);
       color: var(--text-light);
@@ -386,11 +394,11 @@
   <section class="benefits">
     <h2>Escolha uma das opções!</h2>
     <div>
-      <a id="btn-zap-benefit-10" href="https://wa.link/17kbuk">Roupas a partir de R$10<br>Clique agora!</a>
-      <a id="btn-zap-benefit-plus-size" href="https://wa.link/1xwk1f">Peças até o tamanho 70<br>Clique agora!</a>
-      <a id="btn-zap-benefit-video" href="https://wa.link/wh2g3z">Atendimento por WhatsApp<br>Clique agora!</a>
-      <a id="btn-maps-benefit" href="https://maps.app.goo.gl/2BjKhRaKjGXnnNiT9">Loja física em Adamantina-SP<br>Clique agora!</a>
-      <a id="btn-zap-benefit-entrega" href="https://wa.link/cr911n">Entregamos no conforto da sua casa<br>Clique agora!</a>
+      <a id="btn-zap-benefit-10" href="https://wa.link/17kbuk">Roupas a partir de R$10<p>Clique aqui!</p></a>
+      <a id="btn-zap-benefit-plus-size" href="https://wa.link/1xwk1f">Peças até o tamanho 70<p>Clique aqui!</p></a>
+      <a id="btn-zap-benefit-video" href="https://wa.link/wh2g3z">Atendimento por WhatsApp<p>Clique aqui!</p></a>
+      <a id="btn-maps-benefit" href="https://maps.app.goo.gl/2BjKhRaKjGXnnNiT9">Loja física em Adamantina-SP<p>Clique aqui!</p></a>
+      <a id="btn-zap-benefit-entrega" href="https://wa.link/cr911n">Entregamos no conforto da sua casa<p>Clique aqui!</p></a>
     </div>
   </section>
 
